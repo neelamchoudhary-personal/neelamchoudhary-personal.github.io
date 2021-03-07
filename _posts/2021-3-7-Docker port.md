@@ -10,7 +10,9 @@ A docker container does not publish any of its ports to the outside world. In or
 Use the publish flag `-p 8080:80`	Map TCP port 80 in the container to port 8080 on the Docker host.
 
 ### Docker Compose
-`version: "3.9"
+
+```
+version: "3.9"
 services:
   web:
     build: .
@@ -18,7 +20,7 @@ services:
       - "8000:8000"
  db:
    image: postgres
-`
+```
 Map port on 8080 on container to Docker host 
 
 ### Docker Swarm
