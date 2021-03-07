@@ -23,13 +23,27 @@ services:
 ```
 Map port on 8080 on container to Docker host 
 
-### Docker Swarm
-
 
 ### Kubernetes
+```
+ spec:
+      containers:
+        - name: api
+          image: <image-link>
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8443
+          volumeMounts:
+          - name: nginx-certs
+            mountPath: /nginx_certs/
+            readOnly: true
+         
+```
+
+config of containerPort defines the port on which the service running on 
 
 
 
-** DockerFile 
-EXPOSE instruction in the dockerfile does not actually expose the port. It is a way of documention of the image builder to the image user.
+### DockerFile 
+EXPOSE instruction in the dockerfile **does not actually expose the port**. It is a way of documention for the image builder to the image user.
 
