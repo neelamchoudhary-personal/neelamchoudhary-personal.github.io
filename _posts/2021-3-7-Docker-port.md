@@ -39,9 +39,7 @@ Map port on 8080 on container to Docker host
             readOnly: true
          
 ```
-
 config of containerPort defines the port on which the service running on 
-
 
 
 ### DockerFile 
