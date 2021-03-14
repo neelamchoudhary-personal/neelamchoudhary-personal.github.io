@@ -80,15 +80,23 @@ spec:
     app: nginx
 ```
 
-Deployment:
+Deployment:A Kubernetes deployment is a resource object in Kubernetes that provides declarative updates to applications. A deployment allows you to describe an application’s life cycle, such as which images to use for the app, the number of pods there should be, and the way in which they should be updated. 
 
-Service:
+Service: An abstract way to expose an application running on a set of Pods as a network service.Kubernetes Pods are created and destroyed to match the state of your cluster. Pods are nonpermanent resources. If you use a Deployment to run your app, it can create and destroy Pods dynamically.
+
+Each Pod gets its own IP address, however in a Deployment, the set of Pods running in one moment in time could be different from the set of Pods running that application a moment later.
+
+This leads to a problem: if some set of Pods (call them "backends") provides functionality to other Pods (call them "frontends") inside your cluster, how do the frontends find out and keep track of which IP address to connect to, so that the frontend can use the backend part of the workload?
+
+Enter Services.
 
 ## Step 6 
 Expose the service by 
 `kubectl port-forward service/nginx-service 7080:80`
 
 Ngnix is now available at http://localhost:7080 
+
+Kubectl port-forward allows you to access and interact with internal Kubernetes cluster processes from your localhost. You can use this method to investigate issues and adjust your services locally without the need to expose them beforehand
 
 There you go your first application on kubernetes.
 
