@@ -18,16 +18,16 @@ Install docker desktop depending on your os - https://docs.docker.com/docker-for
 
 ## Step 2 
 Install minikube https://minikube.sigs.k8s.io/docs/start/
-x
+
 
 ## Step 3 
 After successfully installing docker and minikube start the minikube 
-`minikube start` or if you are looking at specfic version of kubernetes  `minikube start --kubernetes-version=v1.18.3`
+`minikube start` or if you are looking at specific version of kubernetes  `minikube start --kubernetes-version=v1.18.3`
 `minikube dashboard` to view the dashboard of the minikube 
 
 ## Step 4 
 Confirm if the setup is working fine
-`kubectl get po -A`  should return soemthing  
+`kubectl get po -A`  should return something  
 ```
 NAMESPACE     NAME                               READY   STATUS    RESTARTS   AGE
 kube-system   coredns-74ff55c5b-9l9mm            1/1     Running   1          15h
