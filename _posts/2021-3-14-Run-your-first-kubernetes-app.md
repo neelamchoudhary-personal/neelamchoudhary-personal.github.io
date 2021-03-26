@@ -19,7 +19,6 @@ Install docker desktop depending on your os - https://docs.docker.com/docker-for
 ## Step 2 
 Install minikube https://minikube.sigs.k8s.io/docs/start/
 
-
 ## Step 3 
 After successfully installing docker and minikube start the minikube 
 `minikube start` or if you are looking at specific version of kubernetes  `minikube start --kubernetes-version=v1.18.3`
