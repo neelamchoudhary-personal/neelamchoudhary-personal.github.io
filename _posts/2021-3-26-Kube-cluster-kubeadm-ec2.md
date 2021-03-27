@@ -231,7 +231,7 @@ Minimum required spec for running master and worker on the day of publishing is 
 1. create pvc.yaml 
 ```
 apiVersion: v1
-kind: PersistentVolumeClaim````
+kind: PersistentVolumeClaim
 metadata:
   name: myclaim
 spec:
