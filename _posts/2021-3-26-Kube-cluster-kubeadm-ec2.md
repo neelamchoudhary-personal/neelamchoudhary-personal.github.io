@@ -136,11 +136,11 @@ Minimum required spec for running master and worker on the day of publishing is 
    ```
     sudo systemctl enable kubelet.service
     ```
-   * validation - 
+   * validation - if there are any issue 
    ```$xslt
     sudo systemctl status kubelet  
    ``` 
-   * view logs - for troubleshooting 
+   * view logs - for troubleshooting if there are any issue 
    ```
     sudo journalctl -u kubelet
    ```
