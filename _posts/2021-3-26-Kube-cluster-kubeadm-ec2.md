@@ -73,7 +73,7 @@ Minimum required spec for running master and worker on the day of publishing is 
     ```
     * add current user to docker group. as some of the docker command need alleviated access.
     ```
-    sudo usermod -aG docker ec2-user
+    sudo usermod -a -G docker ec2-user
     ```
     * restart docker after changes 
     ```
