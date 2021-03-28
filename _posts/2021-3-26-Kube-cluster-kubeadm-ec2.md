@@ -218,7 +218,7 @@ Minimum required spec for running master and worker on the day of publishing is 
 1. Same as master
 2. Same as master
 3. Initialize the node as worker
-    * if misplaced the generated join token
+    * if misplaced the generated join token - run on master
     ```
     sudo kubeadm token create --print-join-command
     ``` 
